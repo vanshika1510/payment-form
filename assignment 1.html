@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://127.0.0.1:5500/asignment%201%20apna%20college.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assignment 1_files/assignment1.css">
+    <title>assignment 1</title>
+</head>
+<body>
+    <!--making a payment form as an practice assignment-->
+    <div class="heading">
+    <h1>PAYMENT</h1>
+    <h6>please fill the required fields for the further payment proceedor</h6>
+    </div>
+    <!--starting with the form-->
+    <form>
+        <!--inputing the student-->
+            <h3 class="student">Student details</h3>
+        <p>
+            Name:
+            <br>
+            <input type="text" name="name" id="name" required="" placeholder="NAME">
+        </p>
+        <p>
+            </p><fieldset>
+            <legend>Gender</legend>
+            Male <input type="radio" name="male" id="male" required="">
+            Female <input type="radio" name="female" id="female" required="">
+        </fieldset>
+        <p></p>
+        <p>
+            Branch:
+            <br>
+             <select name="branch" id="branch" required="">
+            <option value="">--select the branch--</option>
+            <option value="ENC">ENC</option>
+            <option value="COE">COE</option>
+            <option value="ECE">ECE</option>
+            <option value="CSE">CSE</option>
+            <option value="mech">MECH</option>
+            <option value="CHEM">CHEM</option>
+            <option value="B.TECH">B.TECH</option>
+            </select>
+        </p>
+        <p>
+            Contact: 
+            <br>
+            <input type="number" name="contact" id="contact" placeholder="1234567890" required="">
+        </p>
+        <p>
+            Email: 
+            <br>
+            <input type="email" name="email" id="email" placeholder="abc21@gmail.com" required="">
+        </p>
+        <h3 class="parents">PARENTS DETAILS</h3>
+        <p>
+            Father Name:
+            <br>
+             <input type="text" name="f_name" id="name" required="" placeholder="Father Name">
+        </p>
+        <p>
+            Email:
+            <br>
+             <input type="email" name="f_email" id="f_email" placeholder="fatheremail@gmail.com" required="">
+            Father's Contact :
+            <br>
+             <input type="number" name="f_number" id="f_number" required="" placeholder="0987654321">
+        </p>
+        <p>
+            Mother Nmae: <input type="text" name="m_name" id="m_name" placeholder="Mother Name" required="">
+        </p>
+        <p>
+          Email: <input type="email" name="m_email" id="e_mail" placeholder="motheremail@gmail.com" required="">
+            Mother's Contact: <input type="number" name="m_number" id="m_number" required="" placeholder="0123456789">
+        </p>
+       
+        <p>
+            CARD TYPE: <select name="card typr" id="card type">
+                <option value="">--select the card type--</option>
+            <option value="VISA">VISA</option>
+            <option value="MASTER_CARD">MASTER CARD</option>
+            <option value="EBAY">EBAY</option>
+            <option value="SWITCH">SWITCH</option>
+        </select>
+        </p>
+        <p>
+            PAYMENT TYPE: <input type="radio" name="pay_card" id="pay_card" required="">
+            DEBIT <input type="radio" name="debit" id="debit">
+            CREDIT <input type="radio" name="credit" id="credit">
+            NET BANKING <input type="radio" name="net_banking" id="net_banking">
+        </p>
+        <p>
+        CARD NUMBER: <input type="number" name="card_num" id="card_num" required="" placeholder="**** **** **** ****">
+        PIN: <input type="password" name="pin" id="pin" required="" placeholder="****">
+        </p>
+        <p>
+            EXPIRATION DATE: <input type="date" name="expiry_date" id="expiry_date" required="">
+        </p>
+        <p>
+            CVV <input type="password" name="cvv" id="cvv" required="" placeholder="***">
+        </p>
+        <input type="submit" value="PAY NOW">
+    </form>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
